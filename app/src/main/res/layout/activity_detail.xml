@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F0E6"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bill Details"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#702D3D"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Electricity Bill Information"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Month"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/txtDetailMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="20sp"
+            android:textColor="#702D3D"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electricity Units (kWh)"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/txtDetailUnits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Charges"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/txtDetailTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RM 0.00"
+            android:textSize="20sp"
+            android:textColor="#702D3D"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rebate Percentage"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/txtDetailRebate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textSize="20sp"
+            android:textColor="#70794D"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Final Cost"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/txtDetailFinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RM 0.00"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#70794D"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EDIT BILL"
+            android:backgroundTint="#70794D"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DELETE BILL"
+            android:backgroundTint="#702D3D"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnDetailBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BACK TO HISTORY"
+            android:backgroundTint="#70794D"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>

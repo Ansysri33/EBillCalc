@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F0E6"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Bill"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#702D3D"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Your Electricity Bill"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Month"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/editSpinnerMonth"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electricity Usage (kWh)"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/editUnitsValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:hint="Enter units (1 - 1000)"
+            android:inputType="number"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rebate Percentage"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtEditRebate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textColor="#702D3D"/>
+
+        <SeekBar
+            android:id="@+id/seekEditRebate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="5"
+            android:progress="0"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:id="@+id/btnUpdateBill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPDATE BILL"
+            android:backgroundTint="#70794D"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnCancelEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:backgroundTint="#702D3D"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>

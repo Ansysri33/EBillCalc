@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F0E6"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bill History"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#702D3D"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Saved Electricity Bills"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <ListView
+        android:id="@+id/listHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#D8D2C3"
+        android:dividerHeight="10dp"
+        android:paddingBottom="10dp"
+        android:clipToPadding="false"/>
+
+    <TextView
+        android:id="@+id/txtEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No bills saved yet."
+        android:textSize="16sp"
+        android:textColor="#70794D"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BACK TO CALCULATOR"
+        android:backgroundTint="#702D3D"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>
